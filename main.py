@@ -14,7 +14,7 @@ def count_characters(input):
 
 def print_report(file_path, input):
     print(f"--- Begin report of {file_path} ---")
-    print(f"There are {words_in_text(input)} words in this text.")
+    print(f"There are {words_in_text(input)} words in this text.\n")
     char_dict = count_characters(input)
     sorted_char_list = sorted(char_dict.items(), reverse=True, key=lambda item: item[1])
     for char, count in sorted_char_list:
